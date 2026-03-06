@@ -1,0 +1,66 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --velion-radius-lg: 12px;
+  --velion-radius-xl: 16px;
+  --velion-space-2: 0.5rem;
+  --velion-space-3: 0.75rem;
+  --velion-space-4: 1rem;
+  --velion-space-5: 1.25rem;
+  --velion-focus: #ff0f88;
+}
+
+html,
+body {
+  @apply bg-velion-black text-velion-text antialiased;
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  background-image: theme("backgroundImage.mesh");
+  background-attachment: fixed;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a,
+button,
+input,
+select,
+textarea {
+  touch-action: manipulation;
+}
+
+:focus-visible {
+  outline: 2px solid var(--velion-focus);
+  outline-offset: 2px;
+}
+
+#root {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2f3548;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff0f88;
+}
+

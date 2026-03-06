@@ -1,0 +1,2 @@
+-- No-op migration intentionally kept.
+-- Reason: this version was already applied to the remote database.
